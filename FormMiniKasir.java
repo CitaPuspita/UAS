@@ -376,12 +376,15 @@ public class FormMiniKasir extends javax.swing.JFrame {
           txtTotHarga1.setText(Double.toString((x*A)-diskon1));
           txtTotHarga2.setText(Double.toString((y*B)-diskon2));
           txtTotHarga3.setText(Double.toString((z*C)-diskon3));
+          txtTotPembayaran.setText(Double.toString(((x*A)-diskon1)+((y*B)-diskon2)+(z*C)-diskon3));
+              
           }
           else{
                
           txtTotHarga1.setText(Double.toString((x*A)));
           txtTotHarga2.setText(Double.toString((y*B)));
           txtTotHarga3.setText(Double.toString((z*C)));
+          txtTotPembayaran.setText(Double.toString(((x*A)+(y*B)+(z*C))));
           }  
             
                     
