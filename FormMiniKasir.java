@@ -364,7 +364,11 @@ public class FormMiniKasir extends javax.swing.JFrame {
             double B = Integer.parseInt(b);  
             double C = Integer.parseInt(c); 
            
-            harga_barang = x*a;
+          if (x >= 50 || y >= 50 || z >= 50){
+          txtHargaBarangD1.setText(Double.toString(A*0.01));
+          txtHargaBarangD2.setText(Double.toString(B*0.01));
+          txtHargaBarangD3.setText(Double.toString(C*0.01));
+          }
             
             
                     
