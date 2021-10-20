@@ -363,7 +363,10 @@ public class FormMiniKasir extends javax.swing.JFrame {
             double A = Integer.parseInt(a);
             double B = Integer.parseInt(b);  
             double C = Integer.parseInt(c); 
-           
+          try {
+            if (x == 0 || y == 0 || z == 0) {
+                JOptionPane.showMessageDialog(null, "Tidak boleh diisi dengan 0");
+                
           if (x >= 50 || y >= 50 || z >= 50){
           JOptionPane.showMessageDialog(null, "Selamat Anda Dapat Diskon 1%");
           diskon1 = A*0.01;
@@ -389,9 +392,7 @@ public class FormMiniKasir extends javax.swing.JFrame {
             
                     
             
-        try {
-            if (x == 0 || y == 0 || z == 0) {
-                JOptionPane.showMessageDialog(null, "Tidak boleh diisi dengan 0");
+        
                 
             }
         } catch (NumberFormatException e) {
