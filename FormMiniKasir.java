@@ -366,11 +366,23 @@ public class FormMiniKasir extends javax.swing.JFrame {
            
           if (x >= 50 || y >= 50 || z >= 50){
           JOptionPane.showMessageDialog(null, "Selamat Anda Dapat Diskon 1%");
-          txtHargaBarangD1.setText(Double.toString(A*0.01));
-          txtHargaBarangD2.setText(Double.toString(B*0.01));
-          txtHargaBarangD3.setText(Double.toString(C*0.01));
+          diskon1 = A*0.01;
+          diskon2 = B*0.01;
+          diskon3 = C*0.01;
+          txtHargaBarangD1.setText(Double.toString(diskon1));
+          txtHargaBarangD2.setText(Double.toString(diskon2));
+          txtHargaBarangD3.setText(Double.toString(diskon3));
+          
+          txtTotHarga1.setText(Double.toString((x*A)-diskon1));
+          txtTotHarga2.setText(Double.toString((y*B)-diskon2));
+          txtTotHarga3.setText(Double.toString((z*C)-diskon3));
           }
-            
+          else{
+               
+          txtTotHarga1.setText(Double.toString((x*A)));
+          txtTotHarga2.setText(Double.toString((y*B)));
+          txtTotHarga3.setText(Double.toString((z*C)));
+          }  
             
                     
             
