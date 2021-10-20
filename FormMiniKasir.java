@@ -365,6 +365,7 @@ public class FormMiniKasir extends javax.swing.JFrame {
             double C = Integer.parseInt(c); 
            
           if (x >= 50 || y >= 50 || z >= 50){
+          JOptionPane.showMessageDialog(null, "Selamat Anda Dapat Diskon 1%");
           txtHargaBarangD1.setText(Double.toString(A*0.01));
           txtHargaBarangD2.setText(Double.toString(B*0.01));
           txtHargaBarangD3.setText(Double.toString(C*0.01));
@@ -477,9 +478,8 @@ public class FormMiniKasir extends javax.swing.JFrame {
             txtJmlBarang1.requestFocus();
         }
        
-        if (x >= 50 || y >= 50 || z >= 50){
-           JOptionPane.showMessageDialog(null, "Selamat Anda Dapat Diskon 1%");
-       }
+                  
+      
     }//GEN-LAST:event_txtJmlBarang1ActionPerformed
 
     /**
